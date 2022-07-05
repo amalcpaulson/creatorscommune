@@ -6,6 +6,7 @@ class Event(models.Model):
     date = models.DateField()
     time = models.TimeField()
     description = models.TextField()
+    link = models.TextField()
     photo = models.ImageField(upload_to = "media/events")
     
     def __str__(self):
